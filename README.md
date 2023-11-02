@@ -20,7 +20,7 @@ Remember to pass the database name where InnoDB foreign keys are stored to the 4
 
 **Example database relationship:**
 
-![image](https://github.com/VictorWesterlund/php-libinnodb-fk/assets/35688133/303a1530-44af-4749-ac6e-d9506f6f847a)
+![image](https://github.com/VictorWesterlund/php-libinnodb-fk/assets/35688133/f3efedc2-6b61-4ca5-a55e-59da78c3e9ee)
 
 ## Initialize `ForeignKeys`
 
