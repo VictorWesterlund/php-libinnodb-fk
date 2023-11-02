@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eaa9235118e1c92aa3ba7d567dd02528",
+    "content-hash": "3d45c83fad219dba6e2178c379070b39",
     "packages": [
         {
             "name": "victorwesterlund/libmysqldriver",
-            "version": "dev-master",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/VictorWesterlund/php-libmysqldriver.git",
@@ -20,7 +20,6 @@
                 "reference": "f9ec9064147e2f78d14800e755ee54df25714d96",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -46,7 +45,7 @@
         },
         {
             "name": "victorwesterlund/xenum",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/VictorWesterlund/php-xenum.git",
@@ -58,7 +57,6 @@
                 "reference": "99b784841ee5b69fdfcc4c466ef54f3af4ea4a85",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -86,10 +84,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "victorwesterlund/libmysqldriver": 20,
-        "victorwesterlund/xenum": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
