@@ -1,6 +1,6 @@
 <?php
 
-    namespace victorwesterlund\ForeignKeys;
+    namespace victorwesterlund;
 
     use \victorwesterlund\xEnum;
     use \libmysqldriver\MySQL as MySQLDriver;
