@@ -6,10 +6,10 @@ This library retrievies and optionally resolves foreign keys in a MySQL/MariaDB 
 
 ## Install with composer
 ```
-composer require victorwesterlund/libinnodb-fk
+composer require victorwesterlund/innodb-fk
 ```
 ```php
-use victorwesterlund\ForeignKeys\ForeignKeys
+use victorwesterlund\ForeignKeys
 ```
 
 # Example / Documentation
@@ -25,7 +25,7 @@ Remember to pass the database name where InnoDB foreign keys are stored to the 4
 ## Initialize `ForeignKeys`
 
 ```php
-use victorwesterlund\ForeignKeys\ForeignKeys
+use victorwesterlund\ForeignKeys
 
 $fk = new ForeignKeys($host, $user, $pass, ForeignKeys::DATABASE_NAME);
 ```
@@ -55,8 +55,14 @@ Retrieve rows from your database and pass them to `resolve_all()` as an array of
 
 ```php
 $rows = [
-   "id" => 1,
-   "fk" => 2
+   [
+      "id" => 1,
+      "fk" => 2
+   ],
+   [
+      "id" => 2,
+      "fk" => 1
+   ]
 ];
 
 $rows = $fk->for("test", "bar")->resolve_all($rows);
@@ -64,10 +70,19 @@ $rows = $fk->for("test", "bar")->resolve_all($rows);
 ```php
 // $rows will become
 [
-   "id" => 1,
-   "fk" => [
-      "id"    => 2,
-      "value" => "hello world"
+   [
+      "id" => 1,
+      "fk" => [
+         "id"    => 2,
+         "value" => "lorem ipsum dolor sit amet"
+      ]
+   ],
+   [
+      "id" => 2,
+      "fk" => [
+         "id"    => 1,
+         "value" => "consectetur adipiscing elit"
+      ]
    ]
 ]
 ```
